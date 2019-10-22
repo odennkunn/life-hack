@@ -1,0 +1,42 @@
+.popular {
+  height: 350px;
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #DDDDDD	;
+  position: relative;
+  display: flex;
+  span {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .card {
+    width: 200px;
+    height: 270px;
+    background: #fff;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    .card-img {
+      border-radius: 5px 5px 0 0;
+      max-width: 100%;
+      height: auto;
+    }
+    .card-content {
+      padding-top: 10px;
+    }
+    .card-text {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+}

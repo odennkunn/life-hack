@@ -1,0 +1,21 @@
+.filters {
+  height: 60px;
+  width: 1200px;
+  margin: 20px auto;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #DDDDDD	;
+
+  &__category {
+    display: flex;
+    padding-left: 20px;
+    line-height: 60px;
+    li {
+      padding-left: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #000044;
+    }
+  }
+}
