@@ -1,0 +1,39 @@
+.arrival {
+  height: 600px;
+  width: 1200px;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  span {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .card {
+    width: 200px;
+    height: 270px;
+    background: #fff;
+    margin: 35px 15px 10px;;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    .card-img {
+      border-radius: 5px 5px 0 0;
+      max-width: 100%;
+      height: auto;
+    }
+    .card-content {
+      padding-top: 10px;
+    }
+    .card-text {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
