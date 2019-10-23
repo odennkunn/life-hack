@@ -18,7 +18,7 @@
   &__search {
     position: absolute;
     top: 15px;
-    right: 250px;
+    right: 400px;
     #search-form{
 
       #search-field {
@@ -27,8 +27,20 @@
       }
       #search-btn {
         width: 70px;
+        border-style: none;
+        border: solid;
+        border-color: #000044;
+        border-width: 1px;
+        color: #000044;
       }
     }
+  }
+  &__name {
+    position: absolute;
+    top: 15px;
+    right: 300px;
+    font-size: 18px;
+    color: #BBBBBB;
   }
   &__btn {
     position: absolute;
@@ -40,9 +52,28 @@
     text-align: center;
     line-height: 30px;
     border-radius: 5px;
-    a {
-      text-decoration: none;
+    .post {
       color: white;
+      text-decoration: none;
+    }
+  }
+  &__create {
+    position: absolute;
+    top: 15px;
+    right: 150px;
+    width: 80px;
+    height: 30px;
+    background-color: #000044;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    .post {
+      color: white;
+      text-decoration: none;
+    }
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
 }
