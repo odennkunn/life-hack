@@ -8,9 +8,24 @@
       <input type = "submit"  id = "search-btn" value = "検索" />
     </form>
   </div>
-  <div class = "header__btn">
-    <a href = "">ログイン</a>
+  <% if user_signed_in? %>
+  <div class = "header__name">
+    <span><%= current_user.name %></span>
   </div>
+  <div class = "header__create">
+    <a href = "/users/">マイページ</a>
+  </div>
+  <div class = "header__btn">
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'post'%>
+  </div>
+  <% else %>
+  <div class = "header__btn">
+    <%= link_to "ログイン", new_user_session_path, class: 'post' %>
+  </div>
+  <div class = "header__create">
+    <%= link_to "新規登録", new_user_registration_path, class: 'post'%>
+  </div>
+  <% end %>
 </div>
 
 <div class = "introduce">
